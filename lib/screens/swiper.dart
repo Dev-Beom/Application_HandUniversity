@@ -3,7 +3,7 @@ import 'package:flutter_page_indicator/flutter_page_indicator.dart';
 
 import 'package:flutter_swiper/flutter_swiper.dart';
 
-class Swiperpage extends StatelessWidget {
+class SwiperPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
