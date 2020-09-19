@@ -1,4 +1,4 @@
-import 'package:application_handuniversity/swiper.dart';
+import 'package:application_handuniversity/onboard.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: Swiperpage(),
+      home: Onboard(),
     );
   }
 }
