@@ -1,8 +1,6 @@
-import 'package:application_handuniversity/bloc/content_provider.dart';
 import 'package:application_handuniversity/screens/add_page.dart';
 import 'swiper.dart';
 import 'package:flutter/material.dart';
-
 
 class MainPage extends StatefulWidget {
   @override
@@ -57,10 +55,9 @@ class _MainPageState extends State<MainPage> {
             if (index == 0) {
               Navigator.push(
                   context, MaterialPageRoute(builder: (context) => AddPage()));
-            }
-            else
-            {
-              Navigator.push(context, MaterialPageRoute(builder: (context) => SwiperPage()));
+            } else {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => SwiperPage()));
             }
           },
           color: index == 0 ? Colors.grey : Colors.blue[600],

@@ -31,25 +31,6 @@ class _AddPageState extends State<AddPage> {
                         Navigator.pop(context);
                       })),
               Flexible(
-<<<<<<< HEAD
-                child: StreamBuilder(
-                    stream: contentBloc.results,
-                    builder: (context, snapshot) {
-                      if (!snapshot.hasData) {
-                        print("!snapshot.hasdata");
-                        return Text("No Data");
-                      } else {
-                        return ListView.builder(
-                          itemCount: snapshot.data.length,
-                          itemBuilder: (context, index) => _buildTile(
-                              snapshot: snapshot,
-                              index: index,
-                              context: context),
-                        );
-                      }
-                    }),
-              ),
-=======
                   child: StreamBuilder(
                       stream: contentBloc.results,
                       builder: (context, snapshot) {
@@ -65,7 +46,6 @@ class _AddPageState extends State<AddPage> {
                                   context: context));
                         }
                       })),
->>>>>>> master
             ],
           ),
         ),
