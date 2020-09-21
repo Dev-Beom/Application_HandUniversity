@@ -25,27 +25,30 @@ class _AddPageState extends State<AddPage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Container(
-                  child: CupertinoButton(
-                      child: Text("뒤로가기"),
-                      onPressed: () {
-                        Navigator.pop(context);
-                      })),
+                child: CupertinoButton(
+                  child: Text("뒤로가기"),
+                  onPressed: () {
+                    Navigator.pop(context);
+                  },
+                ),
+              ),
               Flexible(
-                  child: StreamBuilder(
-                      stream: contentBloc.results,
-                      builder: (context, snapshot) {
-                        if (!snapshot.hasData) {
-                          print("!snapshot.hasdata");
-                          return Text("No Data");
-                        } else {
-                          return ListView.builder(
-                              itemCount: snapshot.data.length,
-                              itemBuilder: (context, index) => _buildTile(
-                                  snapshot: snapshot,
-                                  index: index,
-                                  context: context));
-                        }
-                      })),
+                child: StreamBuilder(
+                  stream: contentBloc.results,
+                  builder: (context, snapshot) {
+                    if (!snapshot.hasData) {
+                      print("!snapshot.hasdata");
+                      return Text("No Data");
+                    } else {
+                      return ListView.builder(
+                        itemCount: snapshot.data.length,
+                        itemBuilder: (context, index) => _buildTile(
+                            snapshot: snapshot, index: index, context: context),
+                      );
+                    }
+                  },
+                ),
+              ),
             ],
           ),
         ),
