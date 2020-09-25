@@ -38,7 +38,7 @@ class _AddPageState extends State<AddPage> {
                   builder: (context, snapshot) {
                     if (!snapshot.hasData) {
                       print("!snapshot.hasdata");
-                      return Text("No Data");
+                      return CircularProgressIndicator();
                     } else {
                       return ListView.builder(
                         itemCount: snapshot.data.length,
