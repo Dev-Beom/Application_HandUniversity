@@ -73,7 +73,7 @@ class _AddPageState extends State<AddPage> {
       child: Container(
         // width: buttonWidth,
         height: buttonHeight,
-        child: FlatButton(
+        child: CupertinoButton(
           onPressed: () {},
           color: Colors.blue[700],
           child: Container(
