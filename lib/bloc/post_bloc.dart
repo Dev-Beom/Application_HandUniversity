@@ -14,8 +14,8 @@ class PostBloc {
     ctrll.close();
   }
 
-  void getContent() {
-    papi.getContent().then((posts) {
+  void getPost() {
+    papi.getPost().then((posts) {
       ctrll.add(posts);
     });
   }

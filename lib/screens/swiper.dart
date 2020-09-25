@@ -53,7 +53,7 @@ class _SwiperPageState extends State<SwiperPage> {
   @override
   Widget build(BuildContext context) {
     final postBloc = PostProvider.of(context);
-    postBloc.getContent();
+    postBloc.getPost();
 
     return Scaffold(
       body: new Swiper(

@@ -8,7 +8,7 @@ class PostAPI {
 
   static const String _url = "https://jsonplaceholder.typicode.com/posts";
 
-  Future<List<Post>> getContent() async {
+  Future<List<Post>> getPost() async {
     List<Post> list = [];
 
     await _client
